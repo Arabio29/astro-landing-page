@@ -1,36 +1,29 @@
 ---
- const personalImageAlt = "Eliasib Cantor"
- import logo from "public/logo.webp"
+const personalImageAlt = "Eliasib Cantor"
+
+const aboutMe = {
+  name: "Eliasib Cantor",
+  title: "Desarrollador Full Stack",
+  description: `Soy un desarrollador web apasionado por crear aplicaciones web eficientes y
+  atractivas. Tengo experiencia en trabajar con diversas tecnologías y disfruto
+  aprendiendo nuevas herramientas para mejorar mis habilidades.`,
+  imageUrl: "public/logo.webp", // Asegúrate de reemplazar esto con la ruta correcta
+};
 ---
 
-<article class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row">
-  <div
-    class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
-  >
-    <p>
-      Me llamo Eliasib Cantor pero mis amigos me llaman midu. Empecé en la
-      programación con un Amstrad, tenía 10 años. Actualmente estoy <strong
-        >construyendo micro aplicaciones con Angular y .NET</strong
-      >.
-    </p>
+  <section class=" py-12 mt-[-120px]">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center">
+        
+        <div class="md:w-2/3 md:pl-12">
+          <h1 class="text-4xl font-bold mb-4">{aboutMe.name}</h1>
+          <h2 class="text-2xl text-gray-700 mb-4">{aboutMe.title}</h2>
+          <p class="text-gray-600 mb-4">{aboutMe.description}</p>
+        </div>
+        <div class="md:w-1/3 mb-8 md:mb-0">
+          <img src={aboutMe.imageUrl} alt={aboutMe.name} class="rounded-full shadow-lg w-48 h-48 mx-auto" />
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <p>
-      Algunos de mis éxitos incluyen <strong
-        >colaborar con hh para el desarrollo de las primeras apps en su
-        sistema FirefoxOS</strong
-      >. Aunque hoy está desaparecido fue un gran avance en el mundo del
-      desarrollo web.
-    </p>
-
-    <p>
-      Como creador de contenido, <strong
-        >cuento con el canal de habla hispana más visto del mundo en la
-        categoría de <em class="italic">Software & Game Development</em> en Twitch</strong
-      >. Mi objetivo es mejorar la empleabilidad de la comunidad hispana y el
-      acceso a contenido de calidad.
-    </p>
-  </div>
-
-  <img width="200" height="200" src="public/logo.webp" alt={personalImageAlt} class="order-1 object-cover w-64 h-full p-1 bg-white md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl dark:bg-yellow-500/5 ring-1 ring-white/20 " style="object-position: 50% 50%">
-
-</article>

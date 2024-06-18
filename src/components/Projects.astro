@@ -4,6 +4,7 @@ import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 import login from "public/login.jpg"
+import type { Code } from "astro:components"
 
 const TAGS = {
   NEXT: {
@@ -16,27 +17,32 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  JAVA: {
+    name: "JAVA",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind,
+  },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Aplicación Back-end para validación de dispositivos",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://fir-app-59269.web.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "public/login.jpg",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Lideré el desarrollo de un sistema automatizado para la gestión integral de proveedores y dispositivos. Creado desde cero con Java, Spring Boot y React.",
+    link: "https://action-factory-frontend.vercel.app/login",
+    github: "https://github.com/hispanos/action-factory",
+    image: "https://fundacionprincesasguerreras.com/wp-content/uploads/2024/05/Captura-de-pantalla-2024-05-04-125353.png",
+    tags: [TAGS.JAVA, TAGS.JAVA],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Login con Facebook, Google y correo",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
+      "Inicio de sesión seguro y conveniente con opciones de Facebook, Google y correo electrónico mediante Firebase Authentication. Creada desde cero con JavaScript, HTML y Bootstrap.",
     link: "https://adventjs.dev",
     image: "public/login.jpg",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Login con Facebook, Google y correo.",
     description:
       "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
     link: "https://adventjs.dev",
